@@ -11,12 +11,19 @@ import { FooterComponent } from "./components/template/footer/footer.component";
 import { NavComponent } from "./components/template/nav/nav.component";
 import { HomeComponent } from "./views/home/home.component";
 
-//Importações do Material
+//Importações do Material e do Angular
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { MatCardModule } from "@angular/material/card";
-import { PaymentComponent } from './views/payment/payment.component';
+import { PaymentComponent } from "./views/payment/payment.component";
+import { PaymentCreateComponent } from "./components/payment/payment-create/payment-create.component";
+import { MatButtonModule } from "@angular/material/button";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule} from '@angular/forms';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -26,6 +33,7 @@ import { PaymentComponent } from './views/payment/payment.component';
     NavComponent,
     HomeComponent,
     PaymentComponent,
+    PaymentCreateComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +43,12 @@ import { PaymentComponent } from './views/payment/payment.component';
     MatSidenavModule,
     MatListModule,
     MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],

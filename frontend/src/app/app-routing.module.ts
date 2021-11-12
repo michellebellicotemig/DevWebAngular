@@ -4,6 +4,7 @@ import { RouterModule, Routes } from "@angular/router";
 //Importação dos componentes para conteúdo
 import { HomeComponent } from "./views/home/home.component";
 import { PaymentComponent } from "./views/payment/payment.component";
+import { PaymentCreateComponent } from "./components/payment/payment-create/payment-create.component";
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: "payments",
     component: PaymentComponent,
+  },
+  {
+    path: "payments/create",
+    component: PaymentCreateComponent ,
   },
 ];
 
