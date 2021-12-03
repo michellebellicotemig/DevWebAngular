@@ -1,0 +1,28 @@
+<mat-card>
+  <mat-card-title>Novo Pagamento</mat-card-title>
+  <form>
+      <mat-form-field>
+          <input matInput placeholder="Nome"
+              [(ngModel)]="payment.nome" name="nome">
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput placeholder="Numero (R$)"
+              [(ngModel)]="payment.numero" name="numero">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Validade"
+            [(ngModel)]="payment.validade" name="validade">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Código"
+            [(ngModel)]="payment.codigo" name="codigo">
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="createPayment()" color="primary">
+      Salvar
+  </button>
+  
+  <button mat-raised-button (click)="cancel()">
+      Cancelar
+  </button>
+</mat-card>

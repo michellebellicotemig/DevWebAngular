@@ -10,26 +10,20 @@ import { HeaderComponent } from "./components/template/header/header.component";
 import { FooterComponent } from "./components/template/footer/footer.component";
 import { NavComponent } from "./components/template/nav/nav.component";
 import { HomeComponent } from "./views/home/home.component";
-import { PaymentComponent } from "./views/payment/payment.component";
-import { PaymentUpdateComponent } from "./components/payment/payment-update/payment-update.component";
-import { PaymentDeleteComponent } from "./components/payment/payment-delete/payment-delete.component";
-import { PaymentCreateComponent } from "./components/payment/payment-create/payment-create.component";
-import { PaymentReadComponent } from "./components/payment/payment-read/payment-read.component";
 
 //Importações do Material e do Angular
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { MatCardModule } from "@angular/material/card";
+import { PaymentComponent } from "./views/payment/payment.component";
+import { PaymentCreateComponent } from "./components/payment/payment-create/payment-create.component";
 import { MatButtonModule } from "@angular/material/button";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { HttpClientModule } from "@angular/common/http";
-import { FormsModule } from "@angular/forms";
-import { MatFormFieldModule } from "@angular/material/form-field";
-import { MatInputModule } from "@angular/material/input";
-import { MatTableModule } from "@angular/material/table";
-import { MatPaginatorModule } from "@angular/material/paginator";
-import { MatSortModule } from "@angular/material/sort";
+import { FormsModule} from '@angular/forms';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -40,9 +34,6 @@ import { MatSortModule } from "@angular/material/sort";
     HomeComponent,
     PaymentComponent,
     PaymentCreateComponent,
-    PaymentReadComponent,
-    PaymentUpdateComponent,
-    PaymentDeleteComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,10 +48,7 @@ import { MatSortModule } from "@angular/material/sort";
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent],
